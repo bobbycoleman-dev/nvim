@@ -104,6 +104,9 @@ return {
 			lspconfig.csharp_ls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.omnisharp.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
