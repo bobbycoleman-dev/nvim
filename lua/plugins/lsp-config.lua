@@ -101,6 +101,15 @@ return {
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.gopls.setup({
+				capabilities = capabilities,
+				settings = {
+					gopls = {
+						completeUnimported = true,
+						usePlaceholders = true,
+					},
+				},
+			})
 			lspconfig.csharp_ls.setup({
 				capabilities = capabilities,
 			})
