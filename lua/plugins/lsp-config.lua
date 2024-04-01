@@ -110,9 +110,6 @@ return {
 					},
 				},
 			})
-			lspconfig.csharp_ls.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.omnisharp.setup({
 				capabilities = capabilities,
 			})
@@ -131,6 +128,7 @@ return {
 					"css",
 					"eruby",
 					"html",
+					"cshtml",
 					"javascript",
 					"javascriptreact",
 					"less",
