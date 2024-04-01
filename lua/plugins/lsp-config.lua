@@ -111,7 +111,13 @@ return {
 				},
 			})
 			lspconfig.omnisharp.setup({
+				cmd = { "omnisharp" },
 				capabilities = capabilities,
+				enable_roslyn_analysers = true,
+				enable_import_completion = true,
+				organize_imports_on_format = true,
+				enable_decompilation_support = true,
+				filetypes = { "cs", "vb", "csproj", "sln", "slnx", "props", "csx", "props", "targets" },
 			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
@@ -148,11 +154,6 @@ return {
 					},
 				},
 			})
-
-			-- vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-			-- vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-			-- vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-			-- vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
 	},
 }
