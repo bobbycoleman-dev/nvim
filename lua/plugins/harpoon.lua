@@ -91,7 +91,7 @@ return {
 			{
 				"<C-8>",
 				function()
-					harpoon:list():append()
+					harpoon:list():add()
 				end,
 				desc = "Harpoon add file",
 			},
